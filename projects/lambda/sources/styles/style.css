@@ -1,0 +1,487 @@
+@font-face
+{
+    font-family: Lato;
+    src: url(../fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: Yeseva;
+    src: url(../fonts/yeseva-one/YesevaOne-Regular_v2.otf);
+}
+
+@font-face
+{
+    font-family: 'Open Sans';
+    src : url(../fonts/open-sans/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Open Sans';
+    src : url(../fonts/open-sans/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+main
+{
+    min-height: calc(100vh - 320px);
+}
+
+.white-text
+{
+    color: #fefefe;
+}
+
+.black-text, p
+{
+    color: #4c4c4c;
+}
+
+.yellow-text, .nav-item:hover
+{
+    color: #d4ac33;
+}
+
+h1
+{
+    font-size: 80px;
+}
+
+h3
+{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+h5, .h5
+{
+    font-size: 20px;
+}
+
+
+h1, h3, h5, .h5
+{
+    font-family: 'Yeseva';
+}
+
+h1, h3, h5
+{
+    text-align: center;
+}
+
+article
+{
+    text-align: center;
+}
+
+p
+{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.flex-box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box-col
+{
+    flex-direction: column;
+}
+
+header
+{
+    background: url(../images/1-block-bg.png);
+    background-size: cover;
+    height: 700px;
+}
+
+.header-wrapper
+{
+    background: rgba(0 ,0 ,0 ,0.2);
+    background-size: cover;
+    height: 700px;
+}
+
+.content
+{
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+    height: inherit;
+}
+
+.header-block
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 60px;
+    background: linear-gradient(rgba(0 ,0 ,0 ,0.3), rgba(0 ,0 ,0 ,0));
+}
+
+.header-text {
+    margin-top: 140px;
+    text-shadow: 1px 0 2px #242929;
+    margin-bottom: 40px;
+}
+
+.nav-menu
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-item
+{
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.nav-item-last
+{
+    margin-right: 16px;
+}
+
+.separator
+{
+    text-align: center;
+}
+
+.button-box
+{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button
+{
+    width: 200px;
+    height: 50px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 20px 10px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.button:hover
+{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.button-dark
+{
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.button-dark:hover
+{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section-cook
+{
+    height: 600px;
+    background: url(../images/pattern-1.png);
+    padding: 40px 0 40px 0;
+}
+
+.section-cook-boxText
+{
+    width: 35%;
+}
+
+.section-cook-boxText p, .section-ingredients-text
+{
+    margin: 24px 0 40px 0;
+}
+
+.section-cook-image
+{
+    width: 50%;
+    margin-left: 60px;
+}
+
+.section-cook-boxText-img
+{
+    margin-left: 80px;
+}
+
+.section-ingredients
+{
+    background: url(../images/2-block-bg.png);
+    background-size: cover;
+    height: 700px;
+}
+
+.section-ingredients-boxText
+{
+    height: 500px;
+    width: 45%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 55%;
+}
+
+.section-ingredients-text
+{
+    width: 80%;
+}
+
+.ingredients-images img
+{
+    margin-right: 25px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.ingredients-images img:last-of-type
+{
+    margin-right: 0;
+}
+
+.menu-box-content
+{
+    justify-content: space-around;
+}
+
+.menu-box
+{
+    min-width: 700px;
+    background: url(../images/pattern-2.png);
+    padding: 60px 0 60px 0;
+}
+
+.menu-box .content .menu-col section:last-of-type
+{
+    margin-top: 32px;
+}
+
+.menu-col
+{
+    width: 45%;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.dish-box
+{
+    height: 80px;
+    padding: 8px 8px 0 8px;
+    margin-top: 8px;
+    position: relative;
+}
+
+.name-dish
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description-dish
+{
+    margin-top: 5px;
+}
+
+.dish-box-special
+{
+    border: 1px solid #d4ac33;
+}
+
+.special-box
+{
+    margin: 0;
+    height: 16px;
+    width: 50px;
+    font-size: 10px;
+    position: absolute;
+    background: #d4ac33;
+    text-align: center;
+    top: -17px;
+    right: -1px;
+    line-height: 16px;
+}
+
+.section-reviews
+{
+    background: url(../images/3-block-bg.png);
+    background-size: cover;
+    height: 700px;
+}
+
+.section-reviews-content
+{
+    width: 66%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 8%;
+    position: relative;
+}
+
+.quote
+{
+    line-height: 44px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.quote-image
+{
+    position: absolute;
+    top: 220px;
+    left: 60px;
+}
+
+.section-reservation
+{
+    height: 700px;
+    background: url(../images/pattern-1.png);
+}
+
+.section-reservation-col
+{
+    width: 49%;
+}
+
+.section-reservation-content
+{
+    justify-content: space-between;
+}
+
+.section-reservation-text
+{
+    text-align: center;
+}
+
+.reservation-description
+{
+    width: 80%;
+    margin: auto;
+}
+
+.reservation-description:first-of-type
+{
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.form
+{
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.form-column:first-of-type
+{
+    margin-right: 30px;
+}
+
+.field label
+{
+    display: block;
+    font-family: 'Open Sans';
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.field:first-child
+{
+    margin-bottom: 16px;
+}
+
+.reservation-input
+{
+    width: 200px;
+    height: 36px;
+    padding-left: 12px;
+    border: 1px solid #c8c6c6;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.reservation-input:focus
+{
+    outline: none;
+    border: 1px solid #c89f2d;
+}
+
+.submit-button
+{
+    width: 200px;
+    height: 36px;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: #c89f2d;
+    border: 0;
+}
+
+.section-feedback-images img:first-of-type
+{
+    margin-right: 30px;
+}
+
+footer
+{
+    height: 320px;
+    background-color: #191919;
+}
+
+.footer
+{
+    align-items: flex-start;
+}
+
+.footer-column
+{
+    width: 30%;
+    padding-top: 54px;
+}
+
+.footer-header
+{
+    padding-bottom: 20px;
+}
+
+.footer-description-text
+{
+    margin: 0;
+    padding-top: 20px;
+}
+
+.footer-column .flex-box
+{
+    padding-top: 48px;
+}
+
+.footer-column .flex-box img
+{
+    margin-right: 5px;
+}
+
+.footer-column .flex-box img:last-of-type
+{
+    margin-right: 0;
+}

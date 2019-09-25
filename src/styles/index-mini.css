@@ -1,0 +1,83 @@
+@media screen and (max-width: 1180px) {
+	.column {
+	    width: 90%;
+	    margin-left: 2%;
+	    margin-right: 2%;
+	}
+
+	.work {
+		margin-bottom: 9%;
+		border: 1px solid #e5e5e5;
+	}
+
+	.work-description__header {
+	    margin-bottom: 0px; 
+	    margin-top: 6px;
+	    font-size: 18px;
+	}
+
+	.work-description__info {
+		display: none;
+	}
+
+    .competation-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .competation-item {
+        width: 50%;
+    }
+
+	.big-portfolio-image {
+		padding-top: 70%;
+	}
+
+	#gem-portfolio-preview {
+		background: url('../../src/portfolio-preview/small/gem-portfolio-preview.png');
+	}
+
+	#arua-portfolio-preview {
+		background: url('../../src/portfolio-preview/small/arua-portfolio-preview.png');
+	}
+
+	#hive-client-portfolio-preview {
+		background: url('../../src/portfolio-preview/small/hive-client-portfolio-preview.png');
+	}
+
+	#legend-portfolio-preview {
+		background: url('../../src/portfolio-preview/small/legend-discount-portfolio-preview.png') no-repeat,
+		linear-gradient(270deg, #5cdbb0, #5cb8db, #975cdb) no-repeat;
+		background-size: cover, 600% 600%;
+		/*position: relative;*/
+	}
+
+	#hive-driver-portfolio-preview, #gem-portfolio-preview, #arua-portfolio-preview,
+	#hive-client-portfolio-preview, #dumper-portfolio-preview {
+		background-size: contain;
+	}
+}
+
+@media screen and (max-width: 762px) {
+	/*.column {*/
+		/*width: 90%;*/
+	    /*margin-left: 5%;*/
+	    /*margin-right: 5%;*/
+	/*}*/
+
+	/*.item {*/
+	    /*border: 1px solid #e5e5e5;*/
+	/*}*/
+
+	#ribbon {
+		display: none;
+	}
+
+    .competation-item {
+        width: 100%;
+    }
+
+    .competation-item * {
+        text-align: center;
+        font-size: 18px;
+    }
+}

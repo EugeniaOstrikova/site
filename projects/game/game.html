@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math-math game</title>
+    <link href="sources/styles/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="form" id="boxForm">
+    <form>
+        <div class="skirtList" id="skirtList">
+            <span class="form-header white-text">Skirt</span>
+            <div class="skirt-wrapper" id="skirt-wrapper">
+                <div class="skirt skirt-min skirt-1 skirt-selected" id="firstSkirt"></div>
+                <div class="skirt skirt-min skirt-2" id="secondSkirt"></div>
+                <div class="skirt skirt-min skirt-3" id="thirdSkirt"></div>
+            </div>
+        </div>
+        <div class="difficultList" id="difficultList">
+            <span class="form-header white-text">Difficult</span>
+            <div class="difficult-wrapper" id="difficult-wrapper">
+                <div class="difficult-arrow left" id="difficult-arrow-left"></div>
+                <div class="difficult-text white-text" id="difficult-text">Medium</div>
+                <div class="difficult-arrow right" id="difficult-arrow-right"></div>
+            </div>
+        </div>
+        <div class="personalData" id="personalData">
+            <div class="form-wrapper">
+                <div class="form-column">
+                    <label class="form-label white-text">Name</label>
+                    <input class="form-input" type="text" name="firstName" id="personFirstName" required>
+                </div>
+                <div class="form-column">
+                    <label class="form-label white-text">Surname</label>
+                    <input class="form-input" type="text" name="lastName" id="personLastName" required>
+                </div>
+            </div>
+            <div class="form-email-container">
+                <label class="form-label white-text">E-mail</label>
+                <input class="form-input" type="email" name="email" id="personEmail" required>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <button class="form-button play-button white-text" id="goToPlay">Play</button>
+            <button class="form-button white-text" type="button" id="topButton">Top players</button>
+            <button class="form-button white-text" type="button" id="openRulesButton">How to play?</button>
+        </div>
+    </form>
+</div>
+<div class="gameContainer hide" id="gameContainer">
+    <div class="game-information" id="game-information">
+        <div class="timer-wrapper">
+            <div class="timer" id="timer">
+                <span class="white-text" id="timerMinute">0</span>
+                <span class="white-text">:</span>
+                <span class="white-text" id="timerSecond">00</span>
+            </div>
+        </div>
+        <button class="game-information-button white-text" name="gameMenu" id="buttonGameMenu">Menu</button>
+    </div>
+    <div class="boxGame" id="boxGame">
+    </div>
+</div>
+<div class="gameMenuContainer hide" id="gameMenuContainer">
+    <button class="form-button white-text" name="butContinue" id="buttonContinueGame" >Continue</button>
+    <button class="form-button white-text" name="butRestart" id="buttonRestartGame">Restart</button>
+    <button class="form-button white-text" name="butNewGame" id="buttonNewGame">New Game</button>
+</div>
+<div class="topContainer hide" id="topContainer">
+    <div class="multiselect-wrapper" id="multiselect-wrapper">
+        <button class="top-list-difficult-selector white-text selected-top-list" id="top-easy-selector">Easy</button>
+        <button class="top-list-difficult-selector white-text" id="top-medium-selector">Medium</button>
+        <button class="top-list-difficult-selector white-text" id="top-hard-selector">Hard</button>
+        <div class="topContainer-close-button" id="closeTopContainer"></div>
+    </div>
+    <div class="topBox white-text" id="topEasyContainer"></div>
+    <div class="topBox white-text hide" id="topMediumContainer"></div>
+    <div class="topBox white-text hide" id="topHardContainer"></div>
+</div>
+<div class="howToPlayBox hide" id="howToPlayBox">
+    <div class="wiki-header rose-text">How To Play</div>
+    <p class="white-text">Train your memory with this game. Your task is to find a pair of identical
+        pictures and as quickly as possible. The game has three levels of difficulty.
+        The more complex the level, the more items you need to match. This toy will be
+        useful for children and adults to develop their memory, reactions and thinking.
+        Good luck.
+    </p>
+    <button class="form-button white-text" id="closeRulesButton">Back</button>
+</div>
+<!--<div class="gameContainer hide" id="gameContainer">-->
+    <!--<div class="buttonsBox">-->
+        <!--<div class="buttonsBoxCol">-->
+            <!--<div id="timer">-->
+                <!--<span id="timerMinute">0</span>-->
+                <!--<span>:</span>-->
+                <!--<span id="timerSecond">00</span>-->
+            <!--</div>-->
+            <!--<button class="button" name="gameMenu" id="buttonGameMenu">Game Menu</button>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="boxGame" id="boxGame">-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="gameMenuContainer hide" id="gameMenuContainer">-->
+    <!--<button class="button" name="butContinue" id="buttonContinueGame" >Continue</button>-->
+    <!--<button class="button" name="butRestart" id="buttonRestartGame">Restart</button>-->
+    <!--<button class="button" name="butNewGame" id="buttonNewGame">New Game</button>-->
+<!--</div>-->
+<!--<div class="topContainer hide" id="topContainer">-->
+    <!--<button class="top-list-difficult-selector selected-top-list" id="top-easy-selector">Easy</button>-->
+    <!--<button class="top-list-difficult-selector" id="top-medium-selector">Medium</button>-->
+    <!--<button class="top-list-difficult-selector" id="top-hard-selector">Hard</button>-->
+    <!--<button class="top-list-difficult-selector" id="closeTopContainer">close</button>-->
+    <!--<div class="topBox" id="topEasyContainer">-->
+
+    <!--</div>-->
+    <!--<div class="topBox hide" id="topMediumContainer">-->
+
+    <!--</div>-->
+    <!--<div class="topBox hide" id="topHardContainer">-->
+
+    <!--</div>-->
+<!--</div>-->
+
+<script src="sources/script.js"></script>
+</body>
+</html>

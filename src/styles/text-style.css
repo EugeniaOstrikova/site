@@ -1,0 +1,106 @@
+body {
+	/*font-family: 'Roboto', Helvetica, Arial, sans-serif;*/
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+p, span, .h1, .h2, .h3, .h4, .h5, .subtext {
+	text-align: left;
+    color: rgba(0,0,0,0.7);
+    margin: 0 0 8px 0;
+}
+
+.big-text {
+    font-size: 18px;
+}
+
+.medium-text {
+	/*line-height: 1.6;*/
+}
+
+.small-text {
+	font-size: 11px;
+	line-height: 1.6;
+}
+
+.h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 38px;
+    font-weight: 300;
+    line-height: 52px;
+}
+
+.h2 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.h4 {
+	color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.h6-portfolio-header {
+    /*font-weight: 800;*/
+    font-size: 19px;
+    /*text-transform: uppercase;*/
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.sub-text-color {
+	color: rgba(133, 144, 166);
+}
+
+.list-of-links p {
+	margin: 0 0 16px 0;
+}
+
+.list-of-links .link {
+    line-height: 26px;
+}
+
+
+.link {
+	color: #3aa9f2;
+	text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.link:visited {
+	color: #98b8c8;
+}
+
+.link-sub-text {
+	text-decoration: none;
+}
+
+.link-sub-text:hover {
+	color: #008bf5;
+	text-decoration: underline; 
+}
+
+.link-sub-text:visited {
+	
+}
